@@ -227,7 +227,7 @@ sup {
 /* footer */
 footer{
     width: 100%;
-    background-color: var(--main-bg);
+    background-color: black;
     margin-top: auto;
 }
 
@@ -254,21 +254,35 @@ footer p{
 /* Image Height */
 .w-100 {
     width: 100%!important;
-    padding-top: 300px;
-  
+    padding-top: 160px;
 }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
-
     padding-top: 200px;
 }
 
-/* .temp_form {
+
+@media (max-width: 768px){
+.temp_form {
     width: auto;
 }
 
 .tempInformation {
     width: auto;
-} */
+}
+}
+
+@media (max-width: 768px){
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .w-100 {
+        width: 100%!important;
+        padding-top: 0px;
+    }
+}
